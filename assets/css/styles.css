@@ -104,7 +104,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1.3rem 0; /* em cima, embaixo e dos lados*/
+    padding: 1rem 0; /* em cima, embaixo e dos lados*/
 }
 
 .download {
@@ -127,4 +127,57 @@ body {
 
 .app-download:nth-child(2) {
     background-image: url('../img/googleplay-button.png');
+}
+
+/*media query para tablet*/
+@media(max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*media query para celulares*/
+@media(max-width: 650px) {
+
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .group {
+        border: 1px solid transparent;
+        margin-bottom: 2px;
+    }
+
+    .get-the-app {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download a {
+        margin-bottom: 20px;
+    }
 }
